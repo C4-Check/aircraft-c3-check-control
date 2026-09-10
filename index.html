@@ -41,4 +41,4 @@ function backupJSON(){download(new Blob([JSON.stringify(tasks,null,2)],{type:'ap
 function restoreJSON(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);if(!Array.isArray(d))throw 0;tasks=d;save();render()}catch(_){alert('Invalid tracker backup file')}};r.readAsText(f)}
 function resetData(){if(confirm('Reset all tracker changes back to the original Excel import?')){tasks=JSON.parse(JSON.stringify(original));save();render()}}
 render();
-</script></body></html>
+</script></body></html> 
