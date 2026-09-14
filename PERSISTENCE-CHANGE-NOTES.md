@@ -1,0 +1,1 @@
+Pre-change safety backup: branch backup/pre-local-persistence-2026-09-14 preserves the original main/index.html before the local persistence change. This file is intentionally documentation only.
